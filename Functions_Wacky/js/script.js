@@ -23,8 +23,15 @@ var bakedPackSold = prompt("How many Brownie Baskets did this student sell? ");
 var bakedPackTotal = b * Number(bakedPackSold);
 var itemsSold = Number(kidsPackSold) + Number(couponBookSold) + Number(bakedPackSold);
 var moneyRaised = kidsPackTotal + couponBookTotal + bakedPackTotal;
+var bigPrize = "Book Set and Flashlight Keychain";
+var smallPrize = "Flash Light Keyhcain";
 
-console.log(moneyRaised);
+
+if(itemsSold >= 10 || moneyRaised >= 150){
+	console.log(bigPrize);
+}else{
+	console.log(smallPrize);
+}
  
 
 
