@@ -1,11 +1,13 @@
-//Joanna Mokhtarezadeh  5-1-2013
+//Joanna Mokhtarezadeh  5-2-2013
 //Industry
-//cost of Druzy Princess Cuff Design
+//Cost of Druzy Princess Cuff Design
 
 var crystals = prompt("How many crystals would you like to add to this design?");
+var pattWire = prompt("What is the cost of 3 inches of sterling pattern wire?");
 var pharWrap = druzy(18, 7);
+var pattern = 1 * Number(pattWire);
 var crysCost = .08 * Number(crystals);
-var total = pharWrap + crysCost;
+var total = pharWrap + crysCost + pattern;
 
 
 function druzy(stone, silver){
