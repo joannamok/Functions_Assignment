@@ -11,13 +11,16 @@ var total = pharWrap + crysCost + pattern;
 var custCost = total * 2;
 var dicount = "Free Shipping";
 var freeGift = "Swarovski Earrings";
+var addEarrings = total + 8;
+var addDiscount = total + 5;
+
 
 function druzy(stone, silver){
 	var total = stone + silver;
 	return total;
 }
 
-freeGift = (custCost >= 125) ? "Your total material cost for this design is"+" "+"$"+total+". You should also give"+" "+freeGift+" "+"during Black Friday with this purchase." : "Your total material cost for this design is"+" "+"$"+total+" "+" You should also give"+" "+dicount+" "+"during Black Friday with this purchase.";
+freeGift = (custCost >= 125) ? "Your total material cost for this design is"+" "+"$"+addEarrings+". This includes their free gift of"+" "+freeGift+" "+"during Black Friday. The customer's cost will be"+" "+"$"+custCost+" "+"." : "Your total material cost for this design is"+" "+"$"+addDiscount+" "+" This includes their"+" "+dicount+" "+"during Black Friday with this purchase. The customer's cost for this design will be"+" "+"$"+custCost;
 console.log(freeGift);
 
 
