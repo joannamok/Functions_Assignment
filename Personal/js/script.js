@@ -1,6 +1,6 @@
 //Joanna Mokhtarezadeh  5-1-2013
 //Personal
-//How many calories do I eat in a day based the same breakfast and snack everyday
+//How many calories do I eat in a day based the same breakfast and snack everyday. The goal is to stay at 1800 calories or less.
 
 bcals = function(coffee,cearal){	//function for total calories for a cup of coffee and a bowl of mini wheats
 	var bfastTotal = coffee + cearal;
@@ -18,8 +18,13 @@ var s = scals(55,65); // calories of apple and orange
 
 var lunchCals = prompt("How many calories did you have for lunch?"); // User prompt for amount of lunch calories
 var dinnerCals = prompt("How many calories did you have for dinner?"); // User promt for amount of dinner calories 
-
 var totalDay = Number(lunchCals) + Number(dinnerCals) + b + s; // total calories for entire day,including breakfst,lunch,dinner and a snack.
+var over = totalDay - 1800;
+//console.log(totalDay);
+if(totalDay <= 1800){
+	console.log("Congrats you stayed in your goal calorie range today!");
+}else{
+	console.log("Ooops, you went over your diet plan by"+" "+ over+" "+"calories today.");
+}
 
-console.log(totalDay);
  
