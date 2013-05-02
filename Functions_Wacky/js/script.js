@@ -2,24 +2,29 @@
 //Wacky
 // School Fundraiser
 
-kidsPack= function (books,tote){
-	kpTotal = books + tote;
-	return = kpTotal;
+var kidsPack = function(book,pack){
+	var total = book + pack;
+	return total;
 }
 
-bakedPack = function (basket,brownies){
-	bpTotal = basket + brownies;
-	return = bpTotal;
+var bakedPack = function(basket,brownies){
+	var total = basket + brownies;
+	return total;
 }
 
+var k = kidsPack(10,5);
+var kidsPackSold = prompt("How many Children's Book Totebags did this student sell? ");
+var kidsPackTotal = k * Number(kidsPackSold);
+//var couponBook = 20;
+//var couponBookSold = prompt("How many Coupon Books did this student sell? ");
+//var couponBookTotal = couponBook * Number(couponBookSold);
+var b = bakedPack(5,10);
+var bakedPackSold = prompt("How many Brownie Baskets did this student sell? ");
+var bakedPackTotal = b * Number(bakedPackSold);
+//var itemsSold = Number(kidsPackSold) + Number(couponBookSold) + Number(bakedPackSold);
 
-var kidsPack = (10,5);
-var kidsPackSold = prompt("How many Children's Book Totebags did this student sell? ")
-var couponBook = 20;
-var couponBookSold = prompt("How many Coupon Books did this student sell? ")
-var bakedPack = (5,10);
-var bakedPackSold = ("How many Brownie Baskets did this student sell? ")
-var itemsSold = prompt("How many items did this student sell?")
+console.log(bakedPackTotal);
+ 
 
 
 
