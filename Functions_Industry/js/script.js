@@ -8,6 +8,8 @@ var pharWrap = druzy(18, 7);
 var pattern = 1 * Number(pattWire);
 var crysCost = .08 * Number(crystals);
 var total = pharWrap + crysCost + pattern;
+var custCost = total * 2;
+
 
 
 function druzy(stone, silver){
@@ -15,7 +17,7 @@ function druzy(stone, silver){
 	return total;
 }
 
-console.log(total);
+console.log(custCost);
 
 
 
