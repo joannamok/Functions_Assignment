@@ -18,7 +18,7 @@ var s = scals(55,65);
 
 var lunchCals = prompt("How many calories did you have for lunch?");
 var dinnerCals = prompt("How many calories did you have for dinner?");
-var totalDay = Number(lunchCals) + Number(dinnerCals);
+var totalDay = Number(lunchCals) + Number(dinnerCals) + b + s;
 
 console.log(totalDay);
  
