@@ -28,7 +28,7 @@ var smallPrize = "Flash Light Keyhcain";
 
 
 if(itemsSold >= 10 || moneyRaised >= 150){
-	console.log(bigPrize);
+	console.log("This student wins the grand prize gift of a"+" "+bigPrize+" ."+"They sold a total of"+" "+itemsSold+" "+"items and raised a total of"+" "+"$"+moneyRaised+".");
 }else{
 	console.log(smallPrize);
 }
