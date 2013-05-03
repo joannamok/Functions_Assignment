@@ -7,8 +7,8 @@ var kidsPack = function(book,pack){
 	return total;
 }
 
-var bakedPack = function(basket,brownies){
-	var total = basket + brownies;
+var bakedPack = function(basket,brownies,cookies){
+	var total = basket + brownies + cookies;
 	return total;
 }
 
@@ -18,7 +18,7 @@ var kidsPackTotal = k * Number(kidsPackSold);
 var couponBook = 20;
 var couponBookSold = prompt("How many Coupon Books did this student sell? ");
 var couponBookTotal = couponBook * Number(couponBookSold);
-var b = bakedPack(5,10);
+var b = bakedPack(5,10,5);
 var bakedPackSold = prompt("How many Brownie Baskets did this student sell? ");
 var bakedPackTotal = b * Number(bakedPackSold);
 var itemsSold = Number(kidsPackSold) + Number(couponBookSold) + Number(bakedPackSold);
